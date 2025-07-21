@@ -1,0 +1,54 @@
+import React from 'react';
+import './Footer.scss';
+
+function Footer() {
+  return (
+    <footer className="bg-dark text-light py-4 mt-5">
+      <div className="container-fluid">
+        <div className="row text-center text-md-start">
+          
+          {/* Colonne 1 : Coordonnées */}
+          <div className="col-12 col-md-4 mb-3 mb-md-0">
+            <h5>John Doe</h5>
+            <p>40, rue Laure Diebold<br />69009 Lyon, France</p>
+            <p>Tél : 10 20 30 40 50</p>
+            <p>Email : <a href="mailto:john.doe@gmail.com" className="footer-link">john.doe@gmail.com</a></p>
+            <div className="social-icons mt-2">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer nofollow">GitHub</a><br />
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer nofollow">Twitter</a><br />
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer nofollow">LinkedIn</a>
+            </div>
+          </div>
+
+          {/* Colonne 2 : Liens utiles */}
+          <div className="col-12 col-md-4 mb-3 mb-md-0">
+            <h5>Liens utiles</h5>
+            <ul className="list-unstyled">
+              <li><a href="/" className="footer-link">Accueil</a></li>
+              <li><a href="/services" className="footer-link">Services</a></li>
+              <li><a href="/portfolio" className="footer-link">Portfolio</a></li>
+              <li><a href="/contact" className="footer-link">Me contacter</a></li>
+              <li><a href="/mentionslegales" className="footer-link">Mentions légales</a></li>
+            </ul>
+          </div>
+
+          {/* Colonne 3 : Réalisations */}
+          <div className="col-12 col-md-4">
+            <h5>Mes dernières réalisations</h5>
+            <ul className="list-unstyled">
+              <li><a href="/portfolio" className="footer-link">Fresh Food</a></li>
+              <li><a href="/portfolio" className="footer-link">Restaurant Akira</a></li>
+              <li><a href="/portfolio" className="footer-link">Espace bien-être</a></li>
+              <li><a href="/portfolio" className="footer-link">SEO</a></li>
+              <li><a href="/portfolio" className="footer-link">Création d'une API</a></li>
+              <li><a href="/portfolio" className="footer-link">Maquette d'un site</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+export default Footer;
