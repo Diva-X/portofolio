@@ -1,5 +1,6 @@
 .nav-link {
-  transition: all 0.2s ease-in-out;
+  transition: text-decoration 0.2s, font-weight 0.2s;
+
   &:hover {
     text-decoration: underline;
   }
@@ -7,5 +8,11 @@
   &.active {
     font-weight: bold;
     text-decoration: underline;
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: none;
   }
 }

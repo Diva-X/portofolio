@@ -1,22 +1,25 @@
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 2rem 1rem;
+}
+
 .footer-link {
   color: #ccc;
   text-decoration: none;
-  transition: color 0.2s, font-weight 0.2s;
 
   &:hover {
-    color: white;
-    font-weight: bold;
+    color: #fff;
+    text-decoration: underline;
   }
 }
 
-.social-icons a {
-  display: inline-block;
-  color: #ccc;
+.social-icon {
+  color: #999;
   margin-right: 10px;
-  text-decoration: none;
-  transition: color 0.2s;
+  font-size: 1.5rem;
 
   &:hover {
-    color: white;
+    color: #fff;
   }
 }
