@@ -1,0 +1,21 @@
+//texte principal
+.hero-content .btn-primary {
+  background-color: #dc3545; // rouge Bootstrap
+  border-color: #dc3545;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+  }
+}
+//image fond
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background: url('/images/hero-bg.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
