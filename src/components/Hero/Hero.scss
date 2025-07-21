@@ -11,3 +11,17 @@
 .hero-content button:hover {
   background-color: #c82333; // rouge plus sombre au survol
 }
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.hero-content h1 {
+  font-size: 3rem;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+}
