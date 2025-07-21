@@ -5,6 +5,7 @@ function About() {
   return (
     <section className="about-section">
       <div className="container">
+        <div className="about-box p-4">
         <div className="row">
 
           {/* Colonne À propos */}
@@ -15,9 +16,12 @@ function About() {
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam convallis ex ac velit scelerisque consectetur. 
               Sed tincidunt fringilla augue, dictum hendrerit arcu vehicula nec. 
+              </p>
+            <p>
               Etiam a tempor sapien, ac accumsan metus. Vivamus felis velit, lobortis in sem in, porttitor aliquam augue. 
               Integer rhoncus congue cursus. Donec sed enim augue. Cras sit amet lorem in turpis pulvinar maximus in tempor velit. 
-              Aliquam a risus tincidunt, pellentesque mi quis, fringilla magna. Sed at lobortis nisi. 
+              Aliquam a risus tincidunt, pellentesque mi quis, fringilla magna.</p>
+            <p>
               Nam tempor, ante eget blandit egestas, nisi elit scelerisque lorem, nec vehicula dolor nisi vitae nisl. 
               Donec condimentum, dolor ac ultricies convallis, dolor arcu pulvinar turpis, vitae consequat lacus sapien vel lorem. 
               Morbi ante lacus, porttitor et massa a, rhoncus tristique lectus. 
@@ -77,6 +81,7 @@ function About() {
           </div>
 
         </div>
+         </div>
       </div>
     </section>
   );

@@ -13,7 +13,7 @@
 
   p {
     font-size: 1.1rem;
-    margin-bottom: 0;
+    margin-bottom: 1,5rem;
   }
 
   .skills-list {
@@ -58,4 +58,10 @@
 
 .progress-bar {
   height: 10px;
+}
+
+/*cadre avec bordure arrondie*/
+.about-box {
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); // ombre légère
 }
