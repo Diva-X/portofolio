@@ -24,19 +24,19 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <NavLink to="/" className="nav-link">Accueil</NavLink>
+                <NavLink to="/" className="nav-link">ACCUEIL</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/services" className="nav-link">Services</NavLink>
+                <NavLink to="/services" className="nav-link">SERVICES</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/portfolio" className="nav-link">Réalisations</NavLink>
+                <NavLink to="/portfolio" className="nav-link">PORTFOLIO</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/contact" className="nav-link">Contact</NavLink>
+                <NavLink to="/contact" className="nav-link">CONTACT</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/mentionslegales" className="nav-link">Mentions légales</NavLink>
+                <NavLink to="/mentionslegales" className="nav-link">MENTIONS LÉGALES</NavLink>
               </li>
             </ul>
           </div>
