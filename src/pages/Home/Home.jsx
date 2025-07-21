@@ -1,3 +1,4 @@
+// src/pages/Home/Home.jsx
 import React from 'react';
 import Hero from '../../components/Hero/Hero';
 
