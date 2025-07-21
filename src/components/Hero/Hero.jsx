@@ -3,7 +3,15 @@ import './Hero.scss';
 
 function Hero() {
   return (
-    <div className="hero-section">
+      <div
+          className="hero-section"
+          style={{
+            backgroundImage: "url('/images/hero.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
       <div className="hero-overlay">
         <div className="hero-content text-center">
           <h1>Bonjour, je suis Jane Doe</h1>
