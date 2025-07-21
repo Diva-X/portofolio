@@ -1,0 +1,11 @@
+.nav-link {
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &.active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
