@@ -9,10 +9,10 @@ function Footer() {
 
           {/* Colonne 1 */}
           <div className="col-12 col-md-4 mb-3 mb-md-0">
-            <h5>John Doe</h5>
+            <h5>Jane Doe</h5>
             <div>40, rue Laure Diebold<br />69009 Lyon, France</div>
             <div>10 20 30 40 50</div>
-            <div>john.doe@gmail.com</div>
+            <div>jane.doe@gmail.com</div>
             <div className="social-icons mt-2">
               <a
                 href="https://github.com"
