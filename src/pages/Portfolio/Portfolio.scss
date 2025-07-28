@@ -1,18 +1,16 @@
-// Portfolio.scss
-
-.services-section {
+.portfolio-section {
   position: relative;
   padding: 0;
 
-  .services-bg {
+  .portfolio-bg {
     background-size: cover;
     background-position: center;
     height: 200px;
     width: 100%;
   }
 
-  .services-content {
-    max-width: 1400px;
+  .portfolio-content {
+    max-width: 1200px; // augmenté pour accueillir 3 cartes sans débordement
     margin-left: auto;
     margin-right: auto;
     padding: 3rem 1rem;
@@ -30,9 +28,6 @@
     p {
       font-size: 1rem;
       margin-bottom: 1rem;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
       color: #333;
     }
 
@@ -45,67 +40,68 @@
       border-radius: 3px;
     }
 
-    .services-cards {
+    .portfolio-cards {
       display: flex;
       justify-content: center;
-      gap: 2rem;
+      gap: 3rem;
       flex-wrap: wrap;
 
-      .service-card {
+      .portfolio-card {
         border: 1px solid #ddd;
         border-radius: 8px;
-        padding: 1rem;
+        padding: 1.5rem 2rem;
         text-align: center;
-        flex: 1 1 300px;
-        max-width: 300px;
+        flex: 1 1 30%;
+        max-width: 400px;
         box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: space-between;
 
         img {
-          max-width: 100%;
+          height: 150px;
+          object-fit: cover;
+          width: 100%;
           border-radius: 6px;
           margin-bottom: 1rem;
-          object-fit: cover;
-          height: 180px;
-          width: 100%;
         }
 
         h3 {
-          margin-bottom: 0.5rem;
+          margin-bottom: 1rem;
           font-weight: 700;
-          font-size: 1.2rem;
+          font-size: 1.25rem;
           color: #222;
         }
 
         p {
-          font-size: 0.95rem;
+          font-size: 1rem;
           line-height: 1.4;
           color: #444;
+          text-align: justify;
           margin-bottom: 1rem;
-          text-align: center;
+          flex-grow: 1;
         }
 
         button {
           background-color: #0d6efd;
           border: none;
           color: white;
-          padding: 0.5rem 1.2rem;
-          border-radius: 4px;
+          padding: 0.5rem 1.5rem;
+          border-radius: 5px;
           cursor: pointer;
-          margin-bottom: 0.8rem;
-          font-size: 1rem;
+          font-weight: 600;
           transition: background-color 0.3s ease;
+          margin-bottom: 1rem;
 
           &:hover {
-            background-color: #084cd9;
+            background-color: #0b5ed7;
           }
         }
 
-        small {
-          color: #888;
+        .portfolio-footer {
           font-size: 0.85rem;
+          color: #666;
+          margin-top: auto;
         }
       }
     }
@@ -113,15 +109,21 @@
 }
 
 @media (max-width: 768px) {
-  .services-content {
+  .portfolio-content {
     padding: 2rem 1rem;
+    max-width: 100%;
 
-    .services-cards {
+    .portfolio-cards {
       flex-direction: column;
-      gap: 1.5rem;
+      gap: 2rem;
 
-      .service-card {
+      .portfolio-card {
         max-width: 100%;
+        flex: none;
+
+        img {
+          height: auto;
+        }
       }
     }
   }
