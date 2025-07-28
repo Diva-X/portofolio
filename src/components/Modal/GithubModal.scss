@@ -1,45 +1,45 @@
-// Styles personnalisés pour la modale GitHub
 .github-modal-dialog {
-  // Apparence globale de la modale
+  width: 100%;
+  max-width: 100%;
+  margin: 1rem auto;
+
   .modal-content {
-    background-color: #1c1c1c; // Thème sombre
+    background-color: #1c1c1c;
     color: white;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
     border: none;
+    width: 100%;
   }
 
-  // Espacement interne du contenu principal
   .modal-body {
     padding: 2rem;
   }
 
-  // Bouton "Fermer" aligné à droite
   .modal-footer {
     justify-content: flex-end;
   }
 
-  // Forcer la couleur du titre (contourne les styles Bootstrap)
   .modal-title {
     color: white;
   }
 
-  // Conteneur principal en deux colonnes (avatar + détails)
   .github-modal-content {
     display: flex;
-    gap: 2rem;
+    flex-direction: column;
     align-items: center;
+    gap: 1.5rem;
+    width: 100%;
 
-    // Avatar GitHub
     .avatar {
-      width: 200px;
-      height: 200px;
+      width: 180px;
+      height: 180px;
       object-fit: cover;
     }
 
-    // Détails du profil utilisateur
     .github-details {
-      flex: 1;
+      width: 100%;
+      text-align: left;
 
       h5 {
         font-weight: normal;
@@ -70,31 +70,6 @@
           &:hover {
             text-decoration: underline;
           }
-        }
-      }
-    }
-  }
-
-  // Responsive pour tablettes et mobiles
-  @media (max-width: 768px) {
-    .github-modal-content {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-
-      .avatar {
-        width: 150px;
-        height: 150px;
-        margin-bottom: 1rem;
-      }
-
-      .github-details {
-        h5 {
-          font-size: 1.2rem;
-        }
-
-        p {
-          font-size: 0.95rem;
         }
       }
     }
