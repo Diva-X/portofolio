@@ -12,7 +12,7 @@ function About() {
           <div className="col-12 col-md-6 mb-4 mb-md-0">
             <h2>À propos de moi</h2>
             <div className="col-divider"></div>
-             <img src="/images/john-doe-about.jpg" alt="John Doe" className="about-img mb-3" />
+             <img src="/images/john-doe-about.jpg" alt="John Doe" className="img-fluid mb-3" />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam convallis ex ac velit scelerisque consectetur. 
               Sed tincidunt fringilla augue, dictum hendrerit arcu vehicula nec. 
