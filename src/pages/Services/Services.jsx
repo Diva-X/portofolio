@@ -4,13 +4,8 @@ import './Services.scss';
 function Services() {
   return (
     <section className="services-section">
-      {/* Image de fond bleue */}
-      <div
-        className="services-bg"
-        style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/images/banner.jpg'})` }}
-      ></div>
+      <div className="services-bg" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/images/banner.jpg'})` }}></div>
 
-      {/* Contenu blanc avec titre, sous-titre, barre bleue et cartes */}
       <div className="services-content">
         <h2>Mon offre de services</h2>
         <p>Voici les prestations sur lesquelles je peux intervenir</p>
