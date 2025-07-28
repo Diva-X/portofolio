@@ -11,7 +11,7 @@ function Services() {
 
         <div className="services-grid">
           <div className="service-card">
-            <i className="bi bi-paint"></i>
+            <i className="bi bi-brush"></i>
             <h3>UX Design</h3>
             <p>
               L'UX Design est une discipline qui consiste à concevoir des produits (sites web, applications mobiles, logiciels, objets connectés, etc.) en plaçant l'utilisateur au centre des préoccupations. L'objectif est de rendre l'expérience utilisateur la plus fluide et agréable possible.
