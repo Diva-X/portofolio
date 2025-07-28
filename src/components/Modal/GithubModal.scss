@@ -103,3 +103,106 @@
     }
   }
 }
+// Styles personnalisés pour la modale GitHub
+.github-modal-dialog {
+  .modal-content {
+    background-color: #1c1c1c;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    border: none;
+  }
+
+  .modal-body {
+    padding: 2rem;
+  }
+
+  .modal-footer {
+    justify-content: flex-end;
+  }
+
+  .modal-title {
+    color: white;
+  }
+
+  .github-modal-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+
+    .avatar {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      align-self: center;
+    }
+
+    .github-details {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      h5 {
+        font-weight: normal;
+        margin-bottom: 1rem;
+
+        a {
+          color: white;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      p {
+        margin-bottom: 0.7rem;
+        font-size: 1rem;
+        color: #ddd;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        i {
+          color: #ddd;
+        }
+
+        a {
+          color: #0d6efd;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Responsive mobile / tablette
+@media (max-width: 768px) {
+  .github-modal-content {
+    flex-direction: column;
+    align-items: center;
+
+    .avatar {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 1rem;
+    }
+
+    .github-details {
+      width: 100%;
+      text-align: left;
+
+      h5 {
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+    }
+  }
+}
