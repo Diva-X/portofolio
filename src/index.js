@@ -2,11 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 
-//Import Bootstrap and Bootstrap Icons
+// ✅ Import de Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+// ✅ Import de Bootstrap Icons
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-// Import SCSS principal
+// ✅ Import fichier SCSS global
 import './styles/main.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,4 +17,3 @@ root.render(
     <App />
   </React.StrictMode>
 );
-

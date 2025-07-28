@@ -1,96 +1,53 @@
 // src/components/Modal/GithubModal.scss
 
-.github-modal-dialog {
-  .modal-content {
-    background-color: #1c1c1c;
-    color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-    border: none;
-  }
-
-  .modal-body {
-    padding: 2rem;
-  }
-
-  .modal-footer {
-    justify-content: flex-end;
-  }
-
-  .modal-title {
-    color: white;
-  }
-
-  .github-modal-content {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-
-    .avatar {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .github-details {
-      flex: 1;
-
-      h5 {
-        font-weight: normal;
-        text-decoration: none;
-        margin-bottom: 1rem;
-
-        a {
-          color: white;
-          text-decoration: none;
-
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
-
-      p {
-        margin-bottom: 0.7rem;
-        font-size: 1rem;
-        color: #ddd;
-
-        i {
-          margin-right: 0.5rem;
-        }
-
-        a {
-          color: #0d6efd;
-
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
-    }
-  }
+.github-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
 }
 
-@media (max-width: 768px) {
-  .github-modal-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; // Avatar circulaire
+  margin-bottom: 1rem;
+}
 
-    .avatar {
-      width: 150px;
-      height: 150px;
-      margin-bottom: 1rem;
-    }
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
 
-    .github-details {
-      h5 {
-        font-size: 1.2rem;
-      }
+.bio {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
 
-      p {
-        font-size: 0.95rem;
-      }
-    }
+.github-link {
+  font-size: 1rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.github-link:hover {
+  text-decoration: underline;
+}
+
+// Responsive : ajustement pour les petits écrans
+@media (max-width: 576px) {
+  .avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .name {
+    font-size: 1.25rem;
+  }
+
+  .bio {
+    font-size: 0.9rem;
   }
 }
