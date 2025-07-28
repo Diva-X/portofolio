@@ -1,30 +1,46 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Card.scss';
 
-function Card({
-  imageSrc,
-  imageAlt,
-  title,
-  description,
-  buttonText,
-  buttonOnClick,
-  footerText,
-  showButton = false,
-  showFooter = false,
-}) {
+function Card({ iconClass, imageSrc, title, description, buttonText, footer }) {
   return (
-    <div className="card">
-      {imageSrc && <img src={imageSrc} alt={imageAlt} className="card-image" />}
-      <h3 className="card-title">{title}</h3>
-      <p className="card-description">{description}</p>
-      {showButton && (
-        <button className="card-button" onClick={buttonOnClick}>
-          {buttonText}
-        </button>
+    <div className="card-container">
+      {iconClass && (
+        <div className="card-icon">
+          <i className={iconClass}></i>
+        </div>
       )}
-      {showFooter && <div className="card-footer">{footerText}</div>}
+
+      {imageSrc && (
+        <div className="card-image">
+          <img src={imageSrc} alt={title} />
+        </div>
+      )}
+
+      <h3>{title}</h3>
+      <p>{description}</p>
+
+      {buttonText && <button className="card-button">{buttonText}</button>}
+
+      {footer && <div className="card-footer">{footer}</div>}
     </div>
   );
 }
+
+Card.propTypes = {
+  iconClass: PropTypes.string,
+  imageSrc: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  buttonText: PropTypes.string,
+  footer: PropTypes.string,
+};
+
+Card.defaultProps = {
+  iconClass: null,
+  imageSrc: null,
+  buttonText: null,
+  footer: null,
+};
 
 export default Card;
