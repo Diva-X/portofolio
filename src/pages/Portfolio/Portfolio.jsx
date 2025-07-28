@@ -26,7 +26,7 @@ function Portfolio() {
           <Card
             imageSrc="/images/portfolio/restaurant-japonais.jpg"
             title="Restaurant Akira"
-            description="Site de restaurant japonais avec menu en ligne"
+            description="Restaurant japonais à Paris"
             buttonText="Voir le site"
             footer="Site réalisé avec WordPress"
           />
