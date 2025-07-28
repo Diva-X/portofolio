@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Hero.scss';
+import GithubModal from '../Modal/GithubModal';
 
 function Hero() {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleOpen = () => setShowModal(true);
+  const handleClose = () => setShowModal(false);
+
   return (
     <div
       className="hero-section"
@@ -19,9 +25,12 @@ function Hero() {
         <div className="hero-content text-center">
           <h1>Bonjour, je suis Jane Doe</h1>
           <h2>Développeuse web full stack</h2>
-          <button className="btn btn-custom mt-3">En savoir plus</button>
+          <button className="btn btn-custom mt-3" onClick={handleOpen}>
+            En savoir plus
+          </button>
         </div>
       </div>
+      <GithubModal show={showModal} handleClose={handleClose} />
     </div>
   );
 }
