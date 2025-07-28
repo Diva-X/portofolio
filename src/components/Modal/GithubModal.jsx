@@ -7,7 +7,7 @@ function GithubModal({ show, handleClose }) {
 
   useEffect(() => {
     if (show) {
-      fetch('https://api.github.com/users/octocat')
+      fetch('https://api.github.com/users/diva-X')
         .then((res) => res.json())
         .then((data) => setProfile(data))
         .catch((error) => console.error('Erreur GitHub:', error));
