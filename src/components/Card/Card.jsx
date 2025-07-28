@@ -1,31 +1,30 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './Card.scss';
 
-function Card({ image, alt, title, description, buttonText, footerText }) {
+function Card({
+  imageSrc,
+  imageAlt,
+  title,
+  description,
+  buttonText,
+  buttonOnClick,
+  footerText,
+  showButton = false,
+  showFooter = false,
+}) {
   return (
-    <div className="card-container">
-      <img src={image} alt={alt} className="card-image" />
-      <h3>{title}</h3>
-      <p>{description}</p>
-      {buttonText && <button>{buttonText}</button>}
-      {footerText && <div className="card-footer">{footerText}</div>}
+    <div className="card">
+      {imageSrc && <img src={imageSrc} alt={imageAlt} className="card-image" />}
+      <h3 className="card-title">{title}</h3>
+      <p className="card-description">{description}</p>
+      {showButton && (
+        <button className="card-button" onClick={buttonOnClick}>
+          {buttonText}
+        </button>
+      )}
+      {showFooter && <div className="card-footer">{footerText}</div>}
     </div>
   );
 }
-
-Card.propTypes = {
-  image: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  buttonText: PropTypes.string,
-  footerText: PropTypes.string,
-};
-
-Card.defaultProps = {
-  buttonText: null,
-  footerText: null,
-};
 
 export default Card;
