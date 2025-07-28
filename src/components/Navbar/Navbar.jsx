@@ -1,37 +1,38 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Navbar.scss';
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container-fluid">
-        <NavLink className="navbar-brand" to="/">Jane Doe</NavLink>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div className="container">
+        <Link className="navbar-brand" to="/">John Doe</Link>
+
         <button
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div className="collapse navbar-collapse" id="mainNavbar">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <NavLink to="/" end className="nav-link">Accueil</NavLink>
+              <Link className="nav-link" to="/">Accueil</Link>
             </li>
             <li className="nav-item">
-              <NavLink to="/services" className="nav-link">Services</NavLink>
+              <Link className="nav-link" to="/services">Services</Link>
             </li>
             <li className="nav-item">
-              <NavLink to="/portfolio" className="nav-link">Portfolio</NavLink>
+              <Link className="nav-link" to="/portfolio">Portfolio</Link>
             </li>
             <li className="nav-item">
-              <NavLink to="/contact" className="nav-link">Contact</NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink to="/mentions-legales" className="nav-link">Mentions légales</NavLink>
+              <Link className="nav-link" to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
