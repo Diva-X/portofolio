@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Hero.scss';
-import GithubModal from '../Modal/GithubModal';
+import GithubModal from '../Modal/GithubModal.jsx';
 
 function Hero() {
   const [showModal, setShowModal] = useState(false);
