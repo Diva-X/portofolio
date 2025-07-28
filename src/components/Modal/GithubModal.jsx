@@ -2,17 +2,15 @@ import React, { useEffect, useState } from 'react';
 import { Modal as BootstrapModal, Button } from 'react-bootstrap';
 import './GithubModal.scss';
 
-// Modale GitHub affichant les données publiques d’un utilisateur via l’API GitHub
 function GithubModal({ show, handleClose }) {
   const [profile, setProfile] = useState(null);
 
-  // Chargement des données du profil à l'ouverture de la modale
   useEffect(() => {
     if (show) {
       fetch('https://api.github.com/users/diva-X')
-        .then((res) => res.json())
-        .then((data) => setProfile(data))
-        .catch((error) => console.error('Erreur GitHub:', error));
+        .then(res => res.json())
+        .then(data => setProfile(data))
+        .catch(error => console.error('Erreur GitHub:', error));
     }
   }, [show]);
 
@@ -21,40 +19,47 @@ function GithubModal({ show, handleClose }) {
       show={show}
       onHide={handleClose}
       centered
-      dialogClassName="github-modal-dialog" // Style personnalisé pour override Bootstrap
+      dialogClassName="github-modal-dialog"
     >
       <BootstrapModal.Header closeButton>
-        <BootstrapModal.Title>Profil GitHub</BootstrapModal.Title>
+        <BootstrapModal.Title className="github-modal-title">
+          Profil GitHub
+        </BootstrapModal.Title>
       </BootstrapModal.Header>
 
       <BootstrapModal.Body>
         {profile ? (
           <div className="github-modal-content">
-            {/* Avatar utilisateur (colonne gauche) */}
-            <img src={profile.avatar_url} alt="Avatar" className="avatar" />
-
-            {/* Détails utilisateur (colonne droite) */}
+            <img
+              src={profile.avatar_url}
+              alt="Avatar"
+              className="avatar"
+            />
             <div className="github-details">
               <h5>
-                <a href={profile.html_url} target="_blank" rel="noreferrer">
+                <a
+                  href={profile.html_url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   {profile.name || profile.login}
                 </a>
               </h5>
               <p>
-                <i className="bi bi-geo-alt"></i>
+                <i className="bi bi-geo-alt" />
                 {profile.location || 'Localisation inconnue'}
               </p>
               <p>{profile.bio || 'Aucune bio disponible'}</p>
               <p>
-                <i className="bi bi-box"></i>
+                <i className="bi bi-box" />
                 {profile.public_repos} repositories publics
               </p>
               <p>
-                <i className="bi bi-people"></i>
+                <i className="bi bi-people" />
                 {profile.followers} followers
               </p>
               <p>
-                <i className="bi bi-person-plus"></i>
+                <i className="bi bi-person-plus" />
                 {profile.following} suivis
               </p>
             </div>
