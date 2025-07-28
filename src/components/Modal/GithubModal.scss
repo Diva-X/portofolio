@@ -42,11 +42,12 @@
         margin-bottom: 1rem;
 
         a {
-          color: white;
+          color: #ddd; // gris clair
           text-decoration: none;
 
           &:hover {
             text-decoration: underline;
+            color: white; // survol en blanc
           }
         }
       }
@@ -64,10 +65,11 @@
         }
 
         a {
-          color: #0d6efd;
+          color: #ddd; // forcer tous les liens en gris clair
 
           &:hover {
             text-decoration: underline;
+            color: white;
           }
         }
       }
