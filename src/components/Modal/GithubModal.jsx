@@ -46,6 +46,10 @@ function GithubModal({ show, handleClose }) {
                 </a>
               </h5>
               <p>
+                <i className="bi bi-person-circle" />
+                {profile.login}
+              </p>
+              <p>
                 <i className="bi bi-geo-alt" />
                 {profile.location || 'Localisation inconnue'}
               </p>
