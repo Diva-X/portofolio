@@ -1,3 +1,4 @@
+// src/components/Modal/GithubModal.jsx
 import React, { useEffect, useState } from 'react';
 import { Modal as BootstrapModal, Button } from 'react-bootstrap';
 import './GithubModal.scss';
@@ -7,7 +8,7 @@ function GithubModal({ show, handleClose }) {
 
   useEffect(() => {
     if (show) {
-      fetch('https://api.github.com/users/octocat')
+      fetch('https://api.github.com/users/Diva-X')
         .then((res) => res.json())
         .then((data) => setProfile(data))
         .catch((error) => console.error('Erreur GitHub:', error));
@@ -15,24 +16,50 @@ function GithubModal({ show, handleClose }) {
   }, [show]);
 
   return (
-    <BootstrapModal show={show} onHide={handleClose} centered>
+    <BootstrapModal
+      show={show}
+      onHide={handleClose}
+      centered
+      dialogClassName="github-modal-dialog"
+    >
       <BootstrapModal.Header closeButton>
         <BootstrapModal.Title>Profil GitHub</BootstrapModal.Title>
       </BootstrapModal.Header>
+
       <BootstrapModal.Body>
         {profile ? (
-          <div>
-            <img src={profile.avatar_url} alt="Avatar" width={80} />
-            <h5>{profile.name}</h5>
-            <p>{profile.bio}</p>
-            <a href={profile.html_url} target="_blank" rel="noreferrer">
-              Voir le profil complet
-            </a>
+          <div className="github-modal-content">
+            <img src={profile.avatar_url} alt="Avatar" className="avatar" />
+            <div className="github-details">
+              <h5>
+                <a href={profile.html_url} target="_blank" rel="noreferrer">
+                  {profile.name || profile.login}
+                </a>
+              </h5>
+              <p>
+                <i className="bi bi-geo-alt"></i>
+                {profile.location || 'Localisation inconnue'}
+              </p>
+              <p>{profile.bio || 'Aucune bio disponible'}</p>
+              <p>
+                <i className="bi bi-box"></i>
+                {profile.public_repos} repositories publics
+              </p>
+              <p>
+                <i className="bi bi-people"></i>
+                {profile.followers} followers
+              </p>
+              <p>
+                <i className="bi bi-person-plus"></i>
+                {profile.following} suivis
+              </p>
+            </div>
           </div>
         ) : (
           <p>Chargement...</p>
         )}
       </BootstrapModal.Body>
+
       <BootstrapModal.Footer>
         <Button variant="secondary" onClick={handleClose}>
           Fermer
