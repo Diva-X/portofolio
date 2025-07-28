@@ -36,18 +36,15 @@ function GithubModal({ show, handleClose }) {
               className="avatar"
             />
             <div className="github-details">
-              <h5>
+              <p>
+                <i className="bi bi-person-circle" />
                 <a
                   href={profile.html_url}
                   target="_blank"
                   rel="noreferrer"
                 >
-                  {profile.name || profile.login}
+                  {profile.login}
                 </a>
-              </h5>
-              <p>
-                <i className="bi bi-person-circle" />
-                {profile.login}
               </p>
               <p>
                 <i className="bi bi-geo-alt" />
