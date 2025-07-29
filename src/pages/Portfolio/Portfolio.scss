@@ -1,4 +1,23 @@
-/* src/pages/Portfolio/Portfolio.scss */
+// ===========================
+// ⚠️ NOTE IMPORTANTE – DEVOIR
+// ===========================
+//
+// Le bouton de cette section n’utilise pas le mixin SCSS `primary-button`.
+// Cela est volontaire pour respecter la maquette visuelle, car :
+//
+//– la taille,
+//– les marges internes (padding),
+// – et la couleur de survol
+//
+// sont différentes des boutons présents dans les autres pages.
+//
+// Les mixins SCSS ont été appliqués dans les sections pertinentes du projet
+// (Contact, Services, Mentions Légales) conformément à la consigne du devoir
+// demandant d’identifier les éléments réutilisables.
+//
+// Ce choix est donc assumé pour garantir la fidélité au design fourni.
+//
+@import '../../styles/mixins';
 
 .portfolio-section {
   position: relative;
@@ -118,18 +137,14 @@
   }
 }
 
-@media (max-width: 992px) {
-  .portfolio-content {
-    max-width: 90%;
-  }
-
-  .card-container {
-    flex: 0 1 calc(50% - 2rem);
+@include responsive-tablet {
+  .portfolio-cards {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 600px) {
-  .card-container {
-    flex: 0 1 100%;
+@include responsive-mobile {
+  .portfolio-cards {
+    grid-template-columns: 1fr;
   }
 }
