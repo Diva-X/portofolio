@@ -1,3 +1,12 @@
+@import './reset';
+@import './variables';
+@import './mixins';
+@import './media';
+@import './global';
+@import './Home';
+@import './Contact';
+@import '../pages/MentionsLegales/MentionsLegales';
+
 body {
   margin: 0;
   padding: 0;
