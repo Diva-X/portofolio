@@ -2,12 +2,12 @@
 
 Ce projet est un portfolio personnel développé en ReactJS dans le cadre de ma formation. Il présente mes services, mes réalisations ainsi que mes coordonnées de contact.
 
-## 🔧 Prérequis
+## Prérequis
 
 - Node.js >= 16.x
 - npm >= 8.x
 
-## 🚀 Installation
+## Installation
 
 Clonez le dépôt :
 
@@ -22,7 +22,7 @@ Installez les dépendances :
 npm install
 ```
 
-## ▶️ Lancement du projet
+## Lancement du projet
 
 Pour lancer le serveur de développement :
 
@@ -32,17 +32,17 @@ npm start
 
 Le site sera accessible à l'adresse : `http://localhost:3000`
 
-## 🧾 Déploiement
+## Déploiement
 
 Le projet est déployé sur GitHub Pages :  
 https://github.com/Diva-X/portofolio
 
-## ✔️ Validation W3C
+## Validation W3C
 
 Les pages HTML ont été validées avec les outils W3C.  
 Captures d’écran des validations disponibles dans le dossier `/captures-w3c`.
 
-## 📁 Arborescence du projet
+## Arborescence du projet
 
 ```
 src/
@@ -101,7 +101,7 @@ src/
 └── index.js
 ```
 
-## 📌 Objectifs pédagogiques
+## Objectifs pédagogiques
 
 - Mise en page avec SCSS
 - Routage avec React Router
