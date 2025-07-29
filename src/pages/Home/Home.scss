@@ -1,0 +1,41 @@
+@import '../../styles/mixins';
+@import '../../styles/mixins';
+
+.home-section {
+  background-color: #fff;
+  padding: 3rem 1rem;
+
+  .home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .divider {
+      @include divider-style;
+    }
+
+    // ... autres éléments éventuels
+  }
+}
+
+@include responsive-tablet {
+  .home-section .home-container {
+    padding: 0 1rem;
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}
