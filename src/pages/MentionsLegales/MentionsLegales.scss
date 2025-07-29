@@ -3,7 +3,7 @@
   padding: 3rem 1rem;
 
   .mentions-container {
-    max-width: 1000px;
+    max-width: 1200px; // élargir le conteneur
     margin: 0 auto;
     text-align: center;
 
@@ -34,8 +34,12 @@
       .accordion-item {
         border: 1px solid #ddd;
         border-radius: 0;
-        margin-bottom: 1rem;
+        margin-bottom: 0; // supprime l'espacement
         background-color: #fff;
+
+        &:not(:first-child) {
+          border-top: none; // supprime les doublons de bordures
+        }
       }
 
       .accordion-button {
