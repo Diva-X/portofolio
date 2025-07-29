@@ -1,0 +1,122 @@
+.contact-section {
+  padding: 3rem 1rem;
+  background-color: #f5f5f5;
+
+  .contact-header {
+    text-align: center;
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+
+    .divider {
+      width: 500px;
+      height: 5px;
+      background-color: #0d6efd;
+      margin: 0 auto 2rem auto;
+      border-radius: 3px;
+    }
+  }
+
+  .contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); // ombre sur 3 côtés
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.1);
+
+    .contact-left,
+    .contact-right {
+      flex: 1 1 400px;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .sub-divider {
+      width: 100%;
+      height: 4px;
+      background-color: #0d6efd;
+      border-radius: 3px;
+      margin-bottom: 1.5rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      input,
+      textarea {
+        padding: 0.75rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+        resize: vertical;
+      }
+
+      textarea {
+        min-height: 120px;
+      }
+
+      .contact-button {
+  display: block;
+  margin: 1rem auto 0 auto;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #0b5ed7;
+  }
+}
+    }
+
+    .contact-info {
+      font-size: 1rem;
+      color: #444;
+      margin-bottom: 1.5rem;
+
+      p {
+        margin: 0.3rem 0;
+      }
+    }
+
+    .map-container {
+      iframe {
+        width: 100%;
+        height: 500px;
+        border: 0;
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
