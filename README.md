@@ -108,7 +108,7 @@ src/
 - Utilisation de Bootstrap (icônes et composants)
 - Responsive design
 - Déploiement sur GitHub Pages
-
+(survivre)
 ---
 
 
