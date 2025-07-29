@@ -46,10 +46,59 @@ Captures d’écran des validations disponibles dans le dossier `/captures-w3c`.
 
 ```
 src/
+├── assets/
+│   ├── logo.png
+│   ├── favicon.ico
+│   └── portfolio/
 ├── components/
+│   ├── Navbar/
+│   │   ├── Navbar.jsx
+│   │   └── Navbar.scss
+│   ├── Footer/
+│   │   ├── Footer.jsx
+│   │   └── Footer.scss
+│   ├── Card/
+│   │   ├── Card.jsx
+│   │   └── Card.scss
+│   ├── Modal/
+│   │   ├── Modal.jsx
+│   │   └── Modal.scss
+│   ├── Hero/
+│   │   ├── Hero.jsx
+│   │   └── Hero.scss
+│   ├── ContactForm/
+│   │   ├── ContactForm.jsx
+│   │   └── ContactForm.scss
 ├── pages/
+│   ├── Home/
+│   │   ├── Home.jsx
+│   │   └── Home.scss
+│   ├── Services/
+│   │   ├── Services.jsx
+│   │   └── Services.scss
+│   ├── Portfolio/
+│   │   ├── Portfolio.jsx
+│   │   └── Portfolio.scss
+│   ├── Contact/
+│   │   ├── Contact.jsx
+│   │   └── Contact.scss
+│   └── Mentions/
+│       ├── Editeur.jsx
+│       ├── Hebergeur.jsx
+│       ├── Credits.jsx
+│       └── Mentions.scss
 ├── styles/
-└── App.js
+│   ├── _variables.scss
+│   ├── _mixins.scss
+│   ├── _reset.scss
+│   ├── _global.scss
+│   ├── _media.scss
+│   └── main.scss
+├── utils/
+│   ├── apiGitHub.js
+│   └── helpers.js
+├── App.jsx
+└── index.js
 ```
 
 ## 📌 Objectifs pédagogiques
