@@ -1,9 +1,11 @@
+@import '../../styles/mixins'; 
+
 .mentions-section {
   background-color: #fff;
   padding: 3rem 1rem;
 
   .mentions-container {
-    max-width: 1200px; // élargir le conteneur
+    max-width: 1200px;
     margin: 0 auto;
     text-align: center;
 
@@ -20,12 +22,7 @@
     }
 
     .divider {
-      width: 100%;
-      max-width: 400px;
-      height: 5px;
-      background-color: #0d6efd;
-      margin: 0 auto 3rem auto;
-      border-radius: 3px;
+      @include divider-style;
     }
 
     .accordion {
@@ -34,11 +31,11 @@
       .accordion-item {
         border: 1px solid #ddd;
         border-radius: 0;
-        margin-bottom: 0; // supprime l'espacement
+        margin-bottom: 0;
         background-color: #fff;
 
         &:not(:first-child) {
-          border-top: none; // supprime les doublons de bordures
+          border-top: none;
         }
       }
 
@@ -88,7 +85,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@include responsive-tablet {
   .mentions-section .mentions-container {
     padding: 0 1rem;
 
