@@ -35,7 +35,7 @@ Le site sera accessible à l'adresse : `http://localhost:3000`
 ## 🧾 Déploiement
 
 Le projet est déployé sur GitHub Pages :  
-👉 [https://votre-utilisateur.github.io/nom-du-repo](https://votre-utilisateur.github.io/nom-du-repo)
+https://github.com/Diva-X/portofolio
 
 ## ✔️ Validation W3C
 
@@ -62,5 +62,4 @@ src/
 
 ---
 
-*Généré automatiquement le 29/07/2025*
 
