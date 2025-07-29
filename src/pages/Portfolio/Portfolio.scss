@@ -17,6 +17,7 @@
 //
 // Ce choix est donc assumé pour garantir la fidélité au design fourni.
 //
+@import '../../styles/mixins';
 
 .portfolio-section {
   position: relative;
@@ -136,18 +137,14 @@
   }
 }
 
-@media (max-width: 992px) {
-  .portfolio-content {
-    max-width: 90%;
-  }
-
-  .card-container {
-    flex: 0 1 calc(50% - 2rem);
+@include responsive-tablet {
+  .portfolio-cards {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 600px) {
-  .card-container {
-    flex: 0 1 100%;
+@include responsive-mobile {
+  .portfolio-cards {
+    grid-template-columns: 1fr;
   }
 }
