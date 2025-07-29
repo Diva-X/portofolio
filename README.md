@@ -12,7 +12,7 @@ Ce projet est un portfolio personnel développé en ReactJS dans le cadre de ma 
 Clonez le dépôt :
 
 ```bash
-git clone https://github.com/votre-utilisateur/nom-du-repo.git
+git clone https://github.com/Diva-X/portofolio
 cd nom-du-repo
 ```
 
