@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from '../../components/Card/Card';
 import './Services.scss';
 
 function Services() {
@@ -15,27 +16,21 @@ function Services() {
         <div className="divider"></div>
 
         <div className="services-cards">
-          <div className="card">
-            <div className="card-icon"><i className="bi bi-brush"></i></div>
-            <h3>UX Design</h3>
-            <p>
-              L'UX Design est une discipline qui consiste à concevoir des produits (sites web, applications mobiles, logiciels, objets connectés, etc.) en plaçant l'utilisateur au centre des préoccupations. L'objectif est de rendre l'expérience utilisateur la plus fluide et agréable possible.
-            </p>
-          </div>
-          <div className="card">
-            <div className="card-icon"><i className="bi bi-code-slash"></i></div>
-            <h3>Développement web</h3>
-            <p>
-              Le développement de sites web consiste à créer des sites internet en utilisant des langages de programmation (HTML, CSS, JavaScript, PHP, etc.) et des frameworks (Bootstrap, React, Angular, etc.).
-            </p>
-          </div>
-          <div className="card">
-            <div className="card-icon"><i className="bi bi-search"></i></div>
-            <h3>Référencement</h3>
-            <p>
-              Le référencement naturel (SEO) est une technique qui consiste à optimiser un site web pour le faire remonter dans les résultats des moteurs de recherche (Google, Bing, Yahoo, etc.). L'objectif est d'attirer un maximum de visiteurs qualifiés sur le site.
-            </p>
-          </div>
+          <Card
+            iconClass="bi bi-brush"
+            title="UX Design"
+            description="Conception centrée utilisateur de sites, applis, objets connectés pour une expérience fluide et agréable."
+          />
+          <Card
+            iconClass="bi bi-code-slash"
+            title="Développement web"
+            description="Création de sites web responsives avec HTML, CSS, JavaScript, PHP et frameworks modernes."
+          />
+          <Card
+            iconClass="bi bi-search"
+            title="Référencement"
+            description="Optimisation SEO pour améliorer la visibilité et attirer plus de visiteurs qualifiés."
+          />
         </div>
       </div>
     </section>
