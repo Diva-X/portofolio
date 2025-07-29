@@ -40,7 +40,7 @@ https://github.com/Diva-X/portofolio
 ## Validation W3C
 
 Les pages HTML ont été validées avec les outils W3C.  
-Captures d’écran des validations disponibles dans le dossier `/captures-w3c`.
+Captures d’écran des validations disponibles dans le dossier `/screenshots`.
 
 ## Arborescence du projet
 
