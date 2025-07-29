@@ -6,7 +6,6 @@ function MentionsLegales() {
     <section className="mentions-section">
       <div className="mentions-container">
         <h2>Mentions légales</h2>
-        <p>Conformément aux obligations de l’article 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la Confiance dans l’économie numérique</p>
         <div className="divider"></div>
 
         <div className="accordion" id="mentionsAccordion">
@@ -19,15 +18,11 @@ function MentionsLegales() {
             </h2>
             <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#mentionsAccordion">
               <div className="accordion-body">
-                <div>
-                  <div>
-                  <p><strong>John Doe</strong></p>
-                  <p><i className="bi bi-map"></i> 40 rue Laure Diebold</p>
-                  <p><i className="bi bi-geo-alt"></i> 69009 Lyon, France</p>
-                  <p><i className="bi bi-phone"></i> 10 20 30 40 50</p>
-                  <p><i className="bi bi-envelope"></i> john.doe@gmail.com</p>
-                </div>
-                </div>
+                <p><strong>Jane Doe</strong></p>
+                <p><i className="bi bi-map"></i> 40 rue Laure Diebold</p>
+                <p><i className="bi bi-geo-alt"></i> 69009 Lyon, France</p>
+                <p><i className="bi bi-phone"></i> 10 20 30 40 50</p>
+                <p><i className="bi bi-envelope"></i> jane.doe@gmail.com</p>
               </div>
             </div>
           </div>
@@ -41,10 +36,8 @@ function MentionsLegales() {
             </h2>
             <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#mentionsAccordion">
               <div className="accordion-body">
-                <p><strong>Hébergeur :</strong></p>
-                <p>alwaysdata</p>
-                <p>91, rue du Faubourg Saint-Honoré</p>
-                <p>75008 Paris</p>
+                <p><strong>alwaysdata</strong></p>
+                <p>91, rue du Faubourg Saint-Honoré, 75008 Paris</p>
                 <p>
                   <i className="bi bi-globe"></i>{' '}
                   <a href="https://www.alwaysdata.com" target="_blank" rel="noopener noreferrer">
@@ -64,10 +57,40 @@ function MentionsLegales() {
             </h2>
             <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#mentionsAccordion">
               <div className="accordion-body">
-                Toutes les images libres de droits sont issues des sites :  
-                <br /><a href="https://pixabay.com" target="_blank" rel="noreferrer">pixabay.com</a>  
-                <br />Icônes issues du site :  
-                <br /><a href="https://www.flaticon.com" target="_blank" rel="noreferrer">flaticon.com</a>
+                <p>
+                  Ce site a été réalisé par John Doe, étudiant au&nbsp;
+                  <a
+                    href="https://www.centre-europeen-formation.fr/landing/multi-marque/?code=1464&utm_source=google&utm_medium=cpc&utm_campaign=TOTAL-REF_PAYANT-Marque_CEF&gad_source=1&gad_campaignid=59552660&gbraid=0AAAAAD-SFixAX2qrBjd2cnuwIheHSbqNF&gclid=Cj0KCQjw4qHEBhCDARIsALYKFNMavLVGbGnCCJ1F51ri2xdvalPwoxVpo3ZPFYUPA9-4wRKVAvUFRFoaAvO0EALw_wcB"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Centre Européen de formation
+                  </a>.
+                </p>
+                <p>
+                  <em>
+                    Les images utilisées sur ce site sont libres de droits et ont été obtenues sur le site&nbsp;
+                    <a
+                      href="https://pixabay.com/fr/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Pixabay
+                    </a>.
+                  </em>
+                </p>
+                <p>
+                  <em>
+                    La favicon de ce site a été fournie par&nbsp;
+                    <a
+                      href="https://www.flaticon.com/de/kostenlose-icons/john-doe"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      John Doe Icons erstellt von Freepik - Flaticon
+                    </a>.
+                  </em>
+                </p>
               </div>
             </div>
           </div>
