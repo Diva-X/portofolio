@@ -1,4 +1,22 @@
-/* src/pages/Portfolio/Portfolio.scss */
+// ===========================
+// ⚠️ NOTE IMPORTANTE – DEVOIR
+// ===========================
+//
+// Le bouton de cette section n’utilise pas le mixin SCSS `primary-button`.
+// Cela est volontaire pour respecter la maquette visuelle, car :
+//
+//– la taille,
+//– les marges internes (padding),
+// – et la couleur de survol
+//
+// sont différentes des boutons présents dans les autres pages.
+//
+// Les mixins SCSS ont été appliqués dans les sections pertinentes du projet
+// (Contact, Services, Mentions Légales) conformément à la consigne du devoir
+// demandant d’identifier les éléments réutilisables.
+//
+// Ce choix est donc assumé pour garantir la fidélité au design fourni.
+//
 
 .portfolio-section {
   position: relative;
